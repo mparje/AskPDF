@@ -9,6 +9,7 @@ from langchain.text_splitter import CharacterTextSplitter
 from langchain.embeddings.openai import OpenAIEmbeddings
 from langchain.vectorstores import FAISS
 import os
+import openai
 
 OpenAIEmbedddings = os.getenv("OPENAI_API_KEY")
 
