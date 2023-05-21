@@ -8,6 +8,9 @@ from PyPDF2 import PdfReader
 from langchain.text_splitter import CharacterTextSplitter
 from langchain.embeddings.openai import OpenAIEmbeddings
 from langchain.vectorstores import FAISS
+import os
+
+OpenAIEmbedddings = os.getenv("OPENAI_API_KEY")
 
 """
     Extracts chunks of text from a PDF file and creates a knowledge base of the text using OpenAI embeddings.
